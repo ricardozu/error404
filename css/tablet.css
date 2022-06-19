@@ -1,0 +1,23 @@
+
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    min-width: 200px;
+    max-width: 350px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.content div{
+    width: 370px;
+}
+
+
+

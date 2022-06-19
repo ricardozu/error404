@@ -1,0 +1,96 @@
+/*
+1.Posicionamiento --> (static, absolute, relative, fixed).
+Modelo de caja (Box model) --> margin, border, padding, content
+Tipografía --> tipos, tamaños de fuente, etc
+Estilos visuales --> box-shadow, border-radius, gradient, etc
+Otros --> reglas CSS y más
+
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    /*Para que el footer se mantenga abajo*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /*-----------------------------------*/
+    font-size: 1.6rem;
+    font-family:'Space Mono', monospace;
+    padding: 10px; 
+}
+
+header{
+    font-family:'Inconsolata', monospace;
+}
+
+.container{
+    /*Para que el contenedor no se salga horizontalmente de la pantalla*/
+    width: 100%;
+    min-width: 200px;
+    /*-----------*/
+    height: 300px;
+    margin-top: 40px;
+    /*En caso de que la imagen se salga del contenedor por tamano */
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+main{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+}
+
+.content>h1{
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.content>div p{
+    margin: 25px 0px;
+    font-size: 1.8rem;
+    line-height: 27px;
+    font-weight: 300;
+}
+
+.content>button{
+    margin-top: 55px;
+    width: 216px;
+    height: 68px;
+    font-weight: 700;
+    background-color: #333333;
+    color: #fff;
+    margin-bottom: 150px;
+    cursor: pointer;
+}
+
+
+
+footer{
+    /*Para que el footer se mantenga abajo*/
+    margin-top: auto;
+    /*-----------------------------------*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    color: #BDBDBD;
+    font-weight: 500;
+    line-height: 17px;
+    place-self: center;
+}
